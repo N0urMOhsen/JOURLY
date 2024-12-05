@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOURLY - Travel agency</title>
+
+    <!-- 
+        - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+        - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+    -->
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+01123456790" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">For Further Inquires :</p>
+
+              <p class="helpline-number">+01 (123) 4567 90</p>
+            </div>
+          </a>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo" />
+          </a>
+
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-blue.svg" alt="Tourly logo" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>home</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>about us</a>
+              </li>
+
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link
+                  >destination</a
+                >
+              </li>
+
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link
+                  >packages</a
+                >
+              </li>
+
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link
+                  >contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+                - #HERO
+        -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            
+            <h2 class="h1 hero-title">Indulge in Extraordinary Experiences</h2>
+          
+
+            <p class="hero-text">
+              Unwind on pristine beaches, rejuvenate your senses in serene natural settings, or simply relax and recharge in luxurious accommodations.
+              Let us pamper you and create a truly unforgettable experience.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Learn more</button>
+
+              <button class="btn btn-secondary">Book Now</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+                - #TOUR SEARCH
+        -->
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Search Destination*</label
+                >
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label">Pax Number*</label>
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No.of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Check in Date**</label>
+
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  placeholder="Checkin Date"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label"
+                  >Check out Date***</label
+                >
+
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+              <button type="submit" class="btn btn-secondary">
+                Inquire now
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- 
+            - #POPULAR
+        -->
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Uncover hidden places</p>
+
+            <h2 class="h2 section-title">Popular destinations</h2>
+
+            <p class="section-text">
+              Escape the ordinary and indulge in paradise. Relax on sun-kissed beaches,
+              rejuvenate your mind and body with wellness retreats,
+              or simply unwind in serene natural settings.
+              Our popular destinations offer the perfect escape for those seeking tranquility and rejuvenation.
+            </p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-1.jpg"
+                      alt="Rome, Italy"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Italy</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Rome</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Where wishes come true and Baroque beauty flows.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-2.jpg"
+                      alt="Sosúa,  Dominican Republic"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#"> Dominican Republic</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Sosúa</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Discover paradise on the shores of the Dominican Republic.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-3.jpg"
+                      alt=" Mykonos, Greece"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Greece</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#"> Mykonos</a>
+                    </h3>
+
+                    <p class="card-text">
+                      A charming alleyway with colorful houses and a breathtaking view.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn-primary">More destinations</button>
+          </div>
+        </section>
+
+        <!-- 
+                - #PACKAGES
+        -->
+        <section class="packages" id="package">
+          <div class="container">
+            <p class="section-subtitle">Popular Packages</p>
+
+            <h2 class="h2 section-title">Checkout Our Packages</h2>
+
+            <p class="section-text">
+              Experience the world in style.
+              Our carefully curated packages offer the perfect blend of luxury, adventure, and cultural immersion.
+              Book your dream vacation today and let us take care of the rest.
+            </p>
+
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-1.jpg"
+                      alt="Escape to Paradise!"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Escape to Paradise!
+                    </h3>
+
+                    <p class="card-text">
+                      Imagine pristine white-sand beaches, crystal-clear turquoise waters, and luxurious overwater bungalows.
+                      The Maldives offers an unparalleled escape for couples seeking romance and adventure. 
+                      Explore vibrant coral reefs, go snorkeling with colorful marine life, or simply relax on the beach and soak up the sun.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Maldives</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(25 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $750
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-2.jpg"
+                      alt=" Where Culture and Nature Meet"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Where Culture and Nature Meet
+                    </h3>
+
+                    <p class="card-text">
+                      Discover the enchanting island of Bali, a tropical paradise with a rich cultural heritage. 
+                      Explore ancient temples, lush rice terraces, and vibrant markets. 
+                      Indulge in rejuvenating spa treatments, surf world-class waves, or embark on a spiritual journey. Bali offers a unique blend of relaxation, adventure, and cultural immersion.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Bali</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(20 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $900
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-3.jpg"
+                      alt="Thailand's Island Gem"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Thailand's Island Gem
+                    </h3>
+
+                    <p class="card-text">
+                      Discover the vibrant island of Phuket, Thailand's largest island. 
+                      Explore stunning beaches, ancient temples, and bustling markets. 
+                      Indulge in delicious Thai cuisine, go diving or snorkeling, or simply relax by the pool. 
+                      Phuket offers a diverse range of activities and experiences for all types of travelers.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Phuket</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(30 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $1200
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary">View All Packages</button>
+          </div>
+        </section>
+
+        <!-- 
+          - #GALLERY
+        -->
+
+        <section class="gallery" id="gallery">
+
+          <div class="container">
+
+            <p class="section-subtitle">Photo Gallery</p>
+
+            <h2 class="h2 section-title">Capture the magic of your travels.</h2>
+
+            <p class="section-text">
+              Immerse yourself in the beauty of the world through the eyes of our travelers. 
+              From breathtaking landscapes to vibrant cultures, our gallery showcases the incredible experiences that await you.
+            </p>
+
+            <ul class="gallery-list">
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+                </figure>
+              </li
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+                </figure>
+              </li
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+                </figure>
+              </li
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/gallery-6.jpg" alt="Gallery image">
+                </figure>
+              </li
+  
+            </ul>
+          </div>
+        </section>
+
+
+         <!-- 
+          - #CTA
+        -->
+
+        <section class="cta" id="contact">
+
+          <div class="container">
+
+            <div class="cta-content">
+
+              <p class="section-subtitle">Call To Action</p>
+
+              <h2 class="h2 section-title">Your Dream Vacation, Our Expertise.</h2>
+
+              <p class="section-text">
+                We're more than just a travel agency; we're your partners in adventure. 
+                Our dedicated team of travel experts will work closely with you to create a personalized itinerary that caters to your unique preferences and budget. 
+                From luxury getaways to budget backpacking trips, we've got you covered.
+              </p>
+            </div>
+
+            <button class="btn btn-secondary">Contact Us !</button>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+
+    
+
+    <!-- 
+      - #FOOTER
+    -->
+
+    <footer class="footer">
+
+      <div class="footer-top">
+
+        <div class="container">
+
+          <div class="footer-brand">
+
+            <a href="#">
+              <img src="./assets/images/logo.svg" alt="Tourly Logo">
+            </a>
+
+            <p class="footer-text">
+              <br />
+              We're here to help you create the perfect vacation package.
+            </p>
+
+          </div>
+
+          <div class="footer-contact">
+
+            <h4 class="contact-title">Contact Us</h4>
+
+            <p class="contact-text">
+              Feel free to reach out with any questions or inquiries!
+            </p>
+
+            <ul>
+
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+  
+                <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+  
+                <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+  
+                <address>3146 Koontz, California</address>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-form">
+
+            <p class="form-text">
+              Sign up for our newsletter and receive a special discount!
+            </p>
+  
+            <form action="" class="form-wrapper">
+              <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+  
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+
+          </div>
+  
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="container">
+
+          <p class="copyright">
+            &copy; 2024 <a href="">n0urmOhsen</a>. All rights reserved
+          </p>
+
+          <ul class="footer-bottom-list">
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <!-- 
+        - GO TO TOP PAGE
+    -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+        - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+        - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
